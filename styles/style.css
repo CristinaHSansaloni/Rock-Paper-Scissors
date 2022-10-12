@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Fredoka One', cursive;
+    color: rgb(237, 244, 158);
+    background-image: linear-gradient( 64.5deg,  rgba(245,116,185,1) 14.7%, rgba(89,97,223,1) 88.7% );
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.header {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    margin-top: 50px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.choise {
+    margin-top: 30px;
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .2);
+    border: solid 1px white;
+    border-radius: 15px;
+    padding: 15px;
+    padding-top: 25px;
+}
+.options {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 30px;
+    width: 70%;
+    padding: 15px;
+    border: solid 1px white;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, .2);
+
+}
+.options-btn {
+    height: 8rem;
+    width: 6rem;
+}
+.play {
+    margin-top: 30px;
+    width: 150px;
+    background-color: rgb(237, 244, 158);
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    transition: transform .5s;
+    height: 40px;
+}
+.play:hover {
+    transform: scale(1.2);
+}
