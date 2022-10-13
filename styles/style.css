@@ -5,60 +5,91 @@
 }
 body {
     font-family: 'Fredoka One', cursive;
-    color: rgb(237, 244, 158);
-    background-image: linear-gradient( 64.5deg,  rgba(245,116,185,1) 14.7%, rgba(89,97,223,1) 88.7% );
+    color: rgba(89,97,223,1);
+    background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 .header {
     display: flex;
     justify-content: center;
-    font-size: 2rem;
-    margin-top: 50px;
+    font-size: 1.5rem;
+    margin: 50px auto 30px;
 }
-.container {
+.game {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.choise {
-    margin-top: 30px;
+.score {
+    height: 15vh;
     display: flex;
-    width: 70%;
-    justify-content: space-around;
+    /*justify-content: space-around;*/
+    gap: 50px;
     align-items: center;
-    background-color: rgba(0, 0, 0, .2);
-    border: solid 1px white;
+    border: solid 1px rgba(89,97,223,1);
     border-radius: 15px;
     padding: 15px;
-    padding-top: 25px;
+    margin: 15px;
 }
+.score h2 {
+    font-size: 30px;
+}
+.score p {
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+}
+.intro {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    opacity: 0;
+}
+.intro h2 {
+    font-size: 30px;
+    color: rgba(89,97,223,1);
+}
+.intro button,
+.match button {
+    width: 120px;
+    height: 50px;
+    background: rgba(245,116,185,1);
+    border: none;
+    border-radius: 15px;
+    font-size: 1.1rem;
+    font-family: 'Fredoka One', cursive;
+    color: white;
+}
+
+.intro button:hover,
+.match button:hover {
+    background: linear-gradient( 64.5deg,  rgba(245,116,185,1) 14.7%, rgba(89,97,223,1) 88.7% );;
+}
+.match {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /*transform: translate(-50%, -50%);*/
+    transform: translate(-50%, -15%);
+}
+.winner {
+    text-align: center;
+    font-size: 1.7rem;
+}
+.hands,
 .options {
     display: flex;
-    justify-content: center;
-    gap: 50px;
-    margin-top: 30px;
-    width: 70%;
-    padding: 15px;
-    border: solid 1px white;
-    border-radius: 15px;
-    background-color: rgba(0, 0, 0, .2);
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
 
 }
-.options-btn {
-    height: 8rem;
-    width: 6rem;
+.hands img {
+    width: 10rem;
 }
-.play {
-    margin-top: 30px;
-    width: 150px;
-    background-color: rgb(237, 244, 158);
-    outline: none;
-    border: none;
-    border-radius: 30px;
-    transition: transform .5s;
-    height: 40px;
-}
-.play:hover {
-    transform: scale(1.2);
+.options button {
+    margin: 1.8rem;
 }

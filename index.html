@@ -17,37 +17,34 @@
     <header class="header">
       <h1>Rock! Paper! Scissors!</h1>
     </header>
-    <main class="container">
-      <section class="choise">
-        <div class="choise-card">
-          <h2>Computer Choise:<span id="computer-choise"></span></h2>
-          <p class="points-computer">0</p>
+    <main class="game">
+      <section class="score">
+        <div class="player-score">
+          <h2>Player</h2>
+          <p>0</p>
         </div>
-        <div class="choise-card">
-          <h2>Your Choise:<span id="user-choise"></span></h2>
-          <p class="points-user">1</p>
+        <div class="computer-score">
+          <h2>Computer</h2>
+          <p>0</p>
         </div>
       </section>
-      <section class="result">
-        <h2>Result:<span id="result"></span></h2>
+      <section class="intro">
+        <h2>Ready?</h2>
+        <button>Let's Play</button>
       </section>
-      <section class="options">
-        <button class="options-btn rock" type="button">
-          <img src="img/rock.svg" alt="" />Rock
-        </button>
-        <button class="options-btn paper" type="button">
-          <img src="./img/paper.svg" alt="" />Paper
-        </button>
-        <button class="options-btn scissors" type="button">
-          <img src="./img/scissors.svg" alt="" />Scissors
-        </button>
-      </section>
-      <section>
-        <p>Choise your option</p>
-        <button class="play">Play</button>
+      <section class="match">
+        <h2 class="winner">Choose an option</h2>
+        <div class="hands">
+          <img class="player-hand" src="./img/rock.png" alt="player hand" />
+          <img class="computer-hand" src="./img/rock.png" alt="computer hand" />
+        </div>
+        <div class="options">
+          <button class="rock">rock</button>
+          <button class="paper">paper</button>
+          <button class="scissors">scissors</button>
+        </div>
       </section>
     </main>
-
     <script src="./js/main.js"></script>
   </body>
 </html>
