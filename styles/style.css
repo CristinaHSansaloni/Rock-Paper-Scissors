@@ -25,7 +25,7 @@ body {
     height: 15vh;
     display: flex;
     /*justify-content: space-around;*/
-    gap: 50px;
+    gap: 100px;
     align-items: center;
     border: solid 1px rgba(89,97,223,1);
     border-radius: 15px;
@@ -46,10 +46,10 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    opacity: 0;
+    transition: opacity 0.5s esase;
 }
 .intro h2 {
-    font-size: 30px;
+    font-size: 3.5rem;
     color: rgba(89,97,223,1);
 }
 .intro button,
@@ -62,6 +62,7 @@ body {
     font-size: 1.1rem;
     font-family: 'Fredoka One', cursive;
     color: white;
+    cursor: pointer;
 }
 
 .intro button:hover,
@@ -74,10 +75,11 @@ body {
     left: 50%;
     /*transform: translate(-50%, -50%);*/
     transform: translate(-50%, -15%);
+    transition: opacity 0.5s esase 0.5s;
 }
 .winner {
     text-align: center;
-    font-size: 1.7rem;
+    font-size: 2.6rem;
 }
 .hands,
 .options {
@@ -89,7 +91,17 @@ body {
 }
 .hands img {
     width: 10rem;
+    height: 9rem;
 }
 .options button {
     margin: 1.8rem;
+    
+}
+section.fadeOut {
+    opacity: 0;
+    pointer-events: none;
+}
+section.fadeIn {
+    opacity: 1;
+    pointer-events: all;
 }

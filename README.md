@@ -3,4 +3,4 @@ A classic game - Rock, Paper, Scissors! Choose one of the three choices and see 
 
 - Vanilla JavaScript
 
-Inspired from developedbyed and freecodecamp
+Inspired from developedbyed (https://github.com/developedbyed) and freecodecamp (https://www.freecodecamp.org/news/web-development-tutorial-javascript-game/)
